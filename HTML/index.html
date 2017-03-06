@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type="text/css" href="../CSS/manheim.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../JavaScript/manheim.js"></script>
+    <title>Manheim Show Store</title>
+</head>
+<body>
+
+<ul class = "nav" id="nav">
+    <li><a class = "home" href="index.html">Home</a></li>
+    <li ><a id="january" onclick="load_month('january')">January</a></li>
+    <li><a id="february" onclick="load_month('february')">February</a></li>
+    <li><a id="march" onclick="load_month('march')" >March</a></li>
+    <li><a id="april" onclick="load_month('april')">April</a></li>
+    <li><a id="may" onclick="load_month('may')">May</a></li>
+    <li><a id="june" onclick="load_month('june')">June</a></li>
+    <li><a id="july" onclick="load_month('july')">July</a></li>
+    <li><a id="august" onclick="load_month('august')">August</a></li>
+    <li><a id="september" onclick="load_month('september')">September</a></li>
+    <li><a id="october" onclick="load_month('october')">October</a></li>
+    <li><a id="november" onclick="load_month('november')">November</a></li>
+    <li><a id="december" onclick="load_month('december')">December</a></li>
+    <li><a id="all shoes" >All Shoes</a></li>
+</ul>
+
+<div class = "container">
+    <div class = "content">
+        <form id = "submission">
+            <div class = "email" style="float:left">
+                Remind me of new shoes <input type="text" name="email" id="email">
+                <input type="submit" name="submit" onclick="displayEmail()">
+                <p id = "emailPrompt"></p>
+            </div>
+            <div class = "promotion" style="float:right">
+                Promotional Code <input type="text" name="code">
+                <input type="submit" name="submit">
+            </div>
+        </form>
+    </div>
+
+    <br>
+</div>
+
+<div id = "blurb">
+
+</div>
+<iframe id = "frame" width="1500" height="1500" frameborder="0"></iframe>
+
+</body>
+</html>
